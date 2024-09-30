@@ -48,6 +48,7 @@ class AdminQuizController extends Controller
     public function update(Request $request, $id)
     {
         $quiz = Quiz::findOrFail($id);
+        $quiz->title = $request->title;
         $quiz->topic = $request->topic;
         $quiz->time = $request->time;
         $quiz->number_of_questions = $request->number_of_questions;

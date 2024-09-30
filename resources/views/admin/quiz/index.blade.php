@@ -4,10 +4,11 @@
 @section('content')
 
 <div class="flex justify-center">
-  <div class="mt-8 w-full md:w-[900px] p-2">
+  <div class="mt-4 w-full md:w-[900px] p-2">
+
 
     <div>
-      <a class="bg-blue-700 px-2 py-2 shadow-lg rounded-lg text-white text-sm font-semibold hover:bg-blue-600"
+      <a class="bg-blue-700 px-2 py-2 shadow-lg rounded-sm text-white text-sm font-semibold hover:bg-blue-600"
         href="{{route('admin.quiz.create')}}">Create
         Quiz</a>
 
@@ -47,6 +48,7 @@
             class="mt-3 w-full text-center text-red-700 py-2 border border-red-500 rounded hover:text-white hover:bg-red-700">
             Delete Quiz
           </button>
+        </form>
 
 
       </div>

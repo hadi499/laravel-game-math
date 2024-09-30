@@ -3,12 +3,6 @@
 @section('content')
 <div class="flex flex-col mt-10 justify-center items-center">
 
-  @if (session()->has('success'))
-  <div class="w-[500px] p-4 bg-green-300 mb-7">
-    {{ session('success') }}
-  </div>
-  @endif
-
   <div>
     <form method="POST" action="{{ route('admin.question.update', $question->id) }}" class="w-[500px]">
       @csrf

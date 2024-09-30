@@ -45,7 +45,7 @@
           </div>
           <div class="flex flex-col gap-2 text-lg ">
             <label for="correct_answer">Correct Answer</label>
-            <input type="text" name="correct_answer"
+            <input type="text" name="correct_answer" autocomplete="off"
               class="w-24 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="
               correct_answer" required>
           </div>
@@ -58,7 +58,7 @@
       </form>
 
     </div>
-    <div class="w-full md:w-[150px]  min-h-[500px]">
+    <div class="w-full md:w-[200px]  min-h-[500px]">
       @foreach ($questions as $q)
       <div class="mb-3">
         <a href="{{ route('admin.question.edit', $q->id) }}" class="">

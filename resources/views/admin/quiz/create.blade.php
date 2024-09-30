@@ -5,15 +5,6 @@
 
 
 
-
-  @if (session()->has('success'))
-  <div class="w-[500px] p-4 bg-green-300 mb-7">
-    {{ session('success') }}
-
-  </div>
-
-  @endif
-
   <div>
     <form method="POST" action="{{ route('admin.quiz.store') }}" class=" w-[500px]">
       @csrf

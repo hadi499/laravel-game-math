@@ -8,6 +8,13 @@ use Illuminate\Http\Request;
 
 class QuizController extends Controller
 {
+    public function index()
+    {
+        return view('quiz.index', [
+            'title' => 'quiz',
+        ]);
+    }
+
     public function easy()
     {
         $quizzes = Quiz::where('level', 'Easy')->get();
